@@ -1,6 +1,4 @@
-package com.Interest;
-import java.util.*;
-class CalculatingInterests {
+public class Interest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,7 +7,7 @@ class CalculatingInterests {
 		int choice = sc.nextInt();
 		switch(choice)
 		{
-		case 1: SimpleInterest si =new Interest();
+		case 1: Compute si =new Compute();
 			   System.out.format("%s","enter principal amount");
 		       float principal = sc.nextFloat();
 			   System.out.format("%s","enter rate of interest");
@@ -19,7 +17,7 @@ class CalculatingInterests {
 		       float interest_obtained = si.CalculateSimpleInterest(principal,rate,timeperiod);
 		       System.out.format("%f",interest_obtained);
 		       break;
-		case 2:CompoundInterest ci = new Interest();
+		case 2:Compute ci = new Compute();
 		       System.out.format("%s","Enter principle amount");
 		       double principal1 = sc.nextDouble();
 		       System.out.format("%s","Enter rate of interest");
