@@ -18,10 +18,10 @@ public class Interest {
 		
 		switch (choice) {
 		case 1:
-			logger.info(String.valueOf(com.CalculateSimpleInterest()));
+			System.out.format("%s",String.valueOf(com.CalculateSimpleInterest()));
 			break;
 		case 2:
-			logger.info(String.valueOf(com.calculateCompoundInterest()));
+			System.out.format("%s",String.valueOf(com.calculateCompoundInterest()));
 			break;
 
 		}
